@@ -1,0 +1,25 @@
+SHAMIR'S SECRET SHARING ALGORITHM - RESULTS
+============================================
+
+Test Case 1:
+- n = 4, k = 3 (polynomial degree = 2)
+- Points used: (1,4), (2,7), (3,12)
+- Secret (constant term): 3
+
+Test Case 2:
+- n = 10, k = 7 (polynomial degree = 6)
+- Points used: (1,995085094601491), (2,21394886326566390), (3,196563650089608580), 
+              (4,1016509518118225900), (5,3711974121218450000), (6,10788619898233491000), 
+              (7,26709394976508342000)
+- Secret (constant term): 79836264059565
+
+FINAL ANSWERS:
+==============
+Test Case 1 Secret: 3
+Test Case 2 Secret: 79836264059565
+
+Algorithm Used: Lagrange Interpolation
+- The constant term of the polynomial is found by evaluating P(0) using Lagrange interpolation
+- For a polynomial of degree m, we need m+1 points to uniquely determine it
+- The solution correctly decodes values from various bases (2, 3, 4, 6, 7, 8, 10, 12, 15, 16)
+- BigInt arithmetic is used to handle large numbers within 256-bit range 

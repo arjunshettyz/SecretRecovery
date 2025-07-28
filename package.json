@@ -1,0 +1,16 @@
+{
+  "name": "shamir-secret-sharing",
+  "version": "1.0.0",
+  "description": "Solution for Shamir's Secret Sharing algorithm assignment",
+  "main": "solution.js",
+  "scripts": {
+    "start": "node solution.js",
+    "test": "node solution.js"
+  },
+  "keywords": ["shamir", "secret-sharing", "polynomial", "lagrange-interpolation"],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 
